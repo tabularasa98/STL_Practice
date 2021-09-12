@@ -1,0 +1,108 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../provided/hashtable.h
+algorithm
+-
+iostream
+-
+fstream
+-
+string
+-
+sstream
+-
+vector
+-
+list
+-
+hashtable.hpp
+../provided/hashtable.hpp
+
+../provided/hashtable.hpp
+hashtable.h
+../provided/hashtable.h
+
+../provided/passserver.h
+hashtable.h
+../provided/hashtable.h
+string
+-
+cstring
+-
+unistd.h
+-
+crypt.h
+-
+passserver.hpp
+../provided/passserver.hpp
+
+../provided/passserver.hpp
+passserver.h
+../provided/passserver.h
+
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/hashtable.h
+algorithm
+-
+iostream
+-
+fstream
+-
+string
+-
+sstream
+-
+vector
+-
+list
+-
+hashtable.hpp
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/hashtable.hpp
+
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/hashtable.hpp
+hashtable.h
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/hashtable.h
+
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/passserver.h
+hashtable.h
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/hashtable.h
+string
+-
+cstring
+-
+unistd.h
+-
+crypt.h
+-
+passserver.hpp
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/passserver.hpp
+
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/passserver.hpp
+passserver.h
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/passserver.h
+
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/proj5.cpp
+iostream
+-
+passserver.h
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/provided/passserver.h
+
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/sproj5.cpp
+termios.h
+-
+unistd.h
+-
+stdio.h
+-
+iostream
+-
+string
+-
+passserver.h
+C:/Users/Tabul/OneDrive/FSU/Summer 20/Data Structures/Homework/Assignment5/passserver.h
+
