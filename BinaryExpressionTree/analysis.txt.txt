@@ -1,0 +1,13 @@
+time complexity for makeEmpty(BinaryNode* & t)
+
+void BET::makeEmpty(BinaryNode *&t) {
+    if(t != nullptr){               //checks if subtree is empty
+        makeEmpty(t->left);         //recursive call to traverse each left node
+        makeEmpty(t->right);        //recursive call to traverse each right node
+        delete t;                   //deletes node if it has no remaining children
+    }
+    t = nullptr;                    //sets deleted nodes to nullptr
+}       //recursive clear function
+
+This function must go through and erase each node with recursion. It is doing a postorder traversal which has a time complexity of O(n)
+even for a skewed tree. therefore the time complexity for makeEmpty() is O(n) also.
