@@ -1,2 +1,3 @@
 # STL_Practice
-Creating STL containers from scratch
+Practice creating different STL containers and implementing them to solve container
+specfic problems.
