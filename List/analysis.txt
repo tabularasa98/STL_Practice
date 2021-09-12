@@ -1,0 +1,27 @@
+Big-O for reverse()
+
+void cop4530::List<T>::reverse() {
+    for(iterator itr = begin(); itr != end(); itr--){       //loop that will run n times where n = size of list
+        std::swap(itr.current->next,itr.current->prev);     //atomic statement where swap has a complexity of O(1)
+    }
+    std::swap(tail->prev, head->next);      		    //atomic statement where swap has a complexity of O(1)	
+    std::swap(tail->prev->next, head->next->prev);	    //atomic statement where swap has a complexity of O(1)      
+}
+
+total complexity = 1n + 2
+after removing constants reverse() has an O(n) complexity. It is linear
+
+Big-O for remove_if()
+
+void cop4530::List<T>::remove_if(PREDICATE pred) {
+    for(iterator itr = begin(); itr!= end();){		//loop that will run n times where n = size of list
+        if(pred(*itr)){     				//function call to a functor of an unknown complexity represented by O(f(n))
+            itr = erase(itr);       			//atomic statement with call to erase() which has an additional 7 atomic elements
+        }else{
+            itr++;      				//else with single atomic element
+        }
+    }
+}
+
+total complexity =        n*(O(f(n)*8) + n
+after removing constants remove_if has a O(n(O(f(n))) complexity. It has a linear complexity multiplied by the complexity of the passed functor.
