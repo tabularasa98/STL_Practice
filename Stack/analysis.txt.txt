@@ -1,0 +1,9 @@
+Analysis for the Big-O of the clear() function in my Stack class
+
+template <typename T>
+void cop4530::Stack<T>::clear() {
+    l.clear();			//calls the clear member function for the list class
+}
+
+The list class' clear() function has a time complexity of O(n) as it must iterate through each element in the list and remove them.
+Therefore the time complexity for my Stack's clear() function also follows a linear O(n).
